@@ -12,29 +12,32 @@ with open('input.txt') as f:
     points = 0
     for line in f:
         game = line.rstrip().replace(" ", "")
-        if game[0] == 'A':
-            if game[1] == 'X':
-                points += 4
-            if game[1] == 'Y':
-                points += 8
-            if game[1] == 'Z':
+        if game[1] == 'X':
+            points += 1
+            if game[0] == "A":
                 points += 3
-
-        if game[0] == 'B':
-            if game[1] == 'X':
-                points += 1
-            if game[1] == 'Y':
-                points += 5
-            if game[1] == 'Z':
-                points += 9
-
-        if game[0] == 'C':
-            if game[1] == 'X':
-                points += 7
-            if game[1] == 'Y':
-                points += 2
-            if game[1] == 'Z':
+            if game[0] == "B":
+                pass
+            if game[0] == "C":
                 points += 6
+
+        if game[1] == 'Y':
+            points += 2
+            if game[0] == "A":
+                points += 6
+            if game[0] == "B":
+                points += 3
+            if game[0] == "C":
+                pass
+
+        if game[1] == 'Z':
+            points += 3
+            if game[0] == "A":
+                pass
+            if game[0] == "B":
+                points += 6
+            if game[0] == "C":
+                points += 3
 
     print(points)
 
