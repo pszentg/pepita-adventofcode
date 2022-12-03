@@ -14,3 +14,5 @@ You can also read about the built-in VCS for PyCharm [here](https://www.jetbrain
 Python is arguably one of the most beautifully documented programming languages existing, therefore I highly suggest reading
 their [documentation](https://docs.python.org/3.11/tutorial/index.html). Most of the problems you will try to solve here can be
 solved using purely their documentation.
+
+If you're curious how general progression in learning Pything should look like and what other topics should you next read up on, you can find a comprehensible decision tree [here](https://roadmap.sh/python)
